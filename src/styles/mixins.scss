@@ -1,0 +1,25 @@
+@import "variables";
+@mixin padding_left_right() {
+    padding-left: 16px;
+    padding-right: 16px;
+    @media (min-width: 376px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    @media (min-width: 576px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    @media (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @media (min-width: 1200px) {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    @media (min-width: 1600px) {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+}

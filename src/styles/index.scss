@@ -1,0 +1,13 @@
+@import url("../assets/fonts/fonts.css");
+@import "./variables.scss";
+*,
+*::before,
+*::after {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: $color_text_main;
+}
