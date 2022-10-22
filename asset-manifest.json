@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/test-task-furniture-store/static/css/main.3b6a78f6.css",
+    "main.js": "/test-task-furniture-store/static/js/main.9c50c439.js",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/test-task-furniture-store/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/logo.svg": "/test-task-furniture-store/static/media/logo.949bbf027d6ef1385174dab6f71a826d.svg",
+    "static/media/machine-learning-model-icon.svg": "/test-task-furniture-store/static/media/machine-learning-model-icon.206ff3d28c21cddb4e17f8f354a8f161.svg",
+    "static/media/fluent-design-icon.svg": "/test-task-furniture-store/static/media/fluent-design-icon.30d1abd57e902c1c8f731a5745b566fa.svg",
+    "static/media/delivery-icon.svg": "/test-task-furniture-store/static/media/delivery-icon.a09b657d3d5d72f46a105d34ffe9c245.svg",
+    "static/media/location-icon.svg": "/test-task-furniture-store/static/media/location-icon.6745baba969402e5781e67f2bcd7b763.svg",
+    "index.html": "/test-task-furniture-store/index.html",
+    "static/media/protect-icon.svg": "/test-task-furniture-store/static/media/protect-icon.cefd771e87ecf754e2634cc2c752ab3f.svg",
+    "main.3b6a78f6.css.map": "/test-task-furniture-store/static/css/main.3b6a78f6.css.map",
+    "main.9c50c439.js.map": "/test-task-furniture-store/static/js/main.9c50c439.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b6a78f6.css",
+    "static/js/main.9c50c439.js"
+  ]
+}
