@@ -26,9 +26,11 @@ const pagesLinks = [
 
 function Header(): JSX.Element {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+
   function handleClick() {
     setIsOpenMenu((prevState) => !prevState);
   }
+
   return (
     <header className={css.header}>
       <Link className={css.header__logoLink} to="#">
@@ -44,7 +46,7 @@ function Header(): JSX.Element {
           <ul className={css.nav__list}>
             {pagesLinks.map((itemObj) => {
               return (
-                <li className={css.nav__listItem}>
+                <li className={css.nav__listItem} key={itemObj.linkText}>
                   <NavLink
                     className={css.nav__link}
                     to={itemObj.linkUrl}

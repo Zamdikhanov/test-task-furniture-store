@@ -11,3 +11,7 @@
     letter-spacing: 0.03em;
     color: $color_text_main;
 }
+
+body.lock {
+    overflow: hidden;
+}

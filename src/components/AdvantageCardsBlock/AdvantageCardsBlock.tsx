@@ -31,7 +31,7 @@ function AdvantageCardsBlock() {
       <ul className={css.advantageCards__container}>
         {advantages.map((itemObj) => {
           return (
-            <li className={css.advantageCard}>
+            <li className={css.advantageCard} key={itemObj.description}>
               {itemObj.renderSvg()}
               <div className={css.advantageCard__description}>
                 {itemObj.description}

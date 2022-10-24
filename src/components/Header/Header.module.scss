@@ -2,7 +2,7 @@
 @import "../../styles/mixins.scss";
 .header {
     @include padding_left_right;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     position: relative;
     height: 70px;
@@ -37,6 +37,7 @@
 
 .header__content {
     display: block;
+    visibility: hidden;
     position: absolute;
     color: inherit;
     right: 0;
@@ -44,9 +45,14 @@
     transform: translate(calc(-100vw - 100%), 100%);
     border-top: 1px solid $color_bg_gray_dark;
     background-color: $color_bg_black;
-    transition: transform ease-out 0.3s;
+    transition-property: transform, visibility;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.1s, 0s;
+    box-shadow: -4px 4px 20px rgba(53, 53, 53, 0.3), -4px 4px 40px rgba(53, 53, 53, 0.3);
     @media (min-width: 1200px) {
         display: flex;
+        visibility: visible;
         position: static;
         flex: 1 0 auto;
         justify-content: space-between;
@@ -54,8 +60,24 @@
         border-top: none;
         background-color: transparent;
         transform: none;
+        box-shadow: none;
     }
+    // &:before {
+    //     position: absolute;
+    //     z-index: -1;
+    //     content: "";
+    //     top: 0;
+    //     right: 0;
+    //     min-width: 100vw;
+    //     min-height: calc(100vh - 70px);
+    //     height: 100%;
+    //     background-color: rgba(192, 192, 192, 0.5);
+    //     @media (min-width: 1200px) {
+    //         display: none;
+    //     }
+    // }
     &_showOnMobile {
+        visibility: visible;
         transform: translate(0%, 100%);
         @media (min-width: 1200px) {
             transform: none;
@@ -65,6 +87,7 @@
 
 .nav {
     color: inherit;
+    background-color: $color_bg_black;
     &__list {
         display: flex;
         flex-direction: column;
@@ -119,6 +142,7 @@
     display: flex;
     flex-direction: column;
     color: inherit;
+    background-color: $color_bg_black;
     font-size: 16px;
     line-height: 22px;
     border-top: 1px solid $color_bg_gray_dark;

@@ -30,7 +30,7 @@ function SubMenu() {
       <ul className={css.subMunu__container}>
         {productLinks.map((itemObj) => {
           return (
-            <li className={css.submenu__linkContainer}>
+            <li className={css.submenu__linkContainer} key={itemObj.linkText}>
               <NavLink
                 className={({ isActive }) =>
                   isActive

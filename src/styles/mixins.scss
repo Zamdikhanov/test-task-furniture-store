@@ -22,4 +22,27 @@
         padding-left: 130px;
         padding-right: 130px;
     }
+    @media (min-width: 1920px) {
+        padding-left: calc(100vw * 0.5 - 830px);
+        padding-right: calc(100vw * 0.5 - 830px);
+    }
+}
+
+@mixin margin_right_minus() {
+    margin-right: -16px;
+    @media (min-width: 376px) {
+        margin-right: -16px;
+    }
+    @media (min-width: 576px) {
+        margin-right: -24px;
+    }
+    @media (min-width: 768px) {
+        margin-right: -32px;
+    }
+    @media (min-width: 1200px) {
+        margin-right: -64px;
+    }
+    @media (min-width: 1600px) {
+        margin-right: -130px;
+    }
 }
