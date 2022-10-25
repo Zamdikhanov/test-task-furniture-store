@@ -10,6 +10,7 @@ import imageSlide1 from "../../assets/images/sofa-01.png";
 import imageSlide2 from "../../assets/images/sofa-02.png";
 import imageSlide3 from "../../assets/images/sofa-03.png";
 import imageSlide4 from "../../assets/images/sofa-04.png";
+import ChecklistDialog from "../ChecklistDialog/ChecklistDialog";
 
 const slidesData = [
   { imgUrl: imageSlide1 },
@@ -20,7 +21,7 @@ const slidesData = [
 
 function Slider() {
   const [index, setIndex] = useState(0);
-  // const swiper = useSwiper();
+  const [isOpenCheckList, setIsOpenChecklist] = useState(false);
 
   return (
     <Swiper
@@ -42,21 +43,37 @@ function Slider() {
       }}
     >
       <SwiperSlide>
-        <ProductSlide imgUrl={slidesData[0].imgUrl} />
+        <ProductSlide
+          imgUrl={slidesData[0].imgUrl}
+          callback={() => setIsOpenChecklist(true)}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <ProductSlide imgUrl={slidesData[1].imgUrl} />
+        <ProductSlide
+          imgUrl={slidesData[1].imgUrl}
+          callback={() => setIsOpenChecklist(true)}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <ProductSlide imgUrl={slidesData[2].imgUrl} />
+        <ProductSlide
+          imgUrl={slidesData[2].imgUrl}
+          callback={() => setIsOpenChecklist(true)}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <ProductSlide imgUrl={slidesData[3].imgUrl} />
+        <ProductSlide
+          imgUrl={slidesData[3].imgUrl}
+          callback={() => setIsOpenChecklist(true)}
+        />
       </SwiperSlide>
       <div className={css.swiper__counter}>
         <span className={css.swiper__counterCurrent}>{index}</span>
         /4
       </div>
+      <ChecklistDialog
+        isOpen={isOpenCheckList}
+        onClose={() => setIsOpenChecklist(false)}
+      />
     </Swiper>
   );
 }

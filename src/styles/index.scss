@@ -12,6 +12,10 @@
     color: $color_text_main;
 }
 
-body.lock {
+#root.lock {
     overflow: hidden;
+}
+
+body {
+    position: relative;
 }

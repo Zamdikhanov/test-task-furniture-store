@@ -44,11 +44,7 @@
             border-radius: 50%;
             background-color: transparent;
             transform: translate(-100%, 50%);
-            transition: all linear 3s;
-            transition-property: background-color, transform;
-            transition-timing-function: linear, linear;
-            transition-duration: 0.01s, 7.5s;
-            transition-delay: 0, 0.01s;
+            transition: transform linear 7.2s 0.3s;
         }
     }
     [class~="swiper-pagination-bullet-active"] {
@@ -57,6 +53,7 @@
     [class~="swiper-pagination-bullet-active"][class~="swiper-pagination-bullet"]::before {
         background-color: $color_text_accent;
         transform: translate(300%, 50%);
+        transition: transform linear 7.2s 0.3s;
         @media (min-width: 1200px) {
             transform: translate(180%, 50%);
         }
