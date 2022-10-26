@@ -5,9 +5,9 @@ import imageBed from "../../../assets/images/bed.jpg";
 import imageCloset from "../../../assets/images/closet.jpg";
 import imageDresser from "../../../assets/images/dresser.jpg";
 import imageMattress from "../../../assets/images/mattress.jpg";
-import css from "./Step1.module.scss";
+import css from "./Step4.module.scss";
 
-const Step1 = ({ setIsReady = (a: boolean) => {} }) => {
+const Step4 = ({ setIsReady = (a: boolean) => {} }) => {
   const [isSelected1, setIsSelected1] = useState(false);
   const [isSelected2, setIsSelected2] = useState(false);
   const [isSelected3, setIsSelected3] = useState(false);
@@ -93,4 +93,4 @@ const Step1 = ({ setIsReady = (a: boolean) => {} }) => {
   );
 };
 
-export default Step1;
+export default Step4;

@@ -1,0 +1,40 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+.question {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color_text_main;
+    margin-bottom: 16px;
+    @media (min-width: 1200px) {
+        margin-bottom: 32px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.toggleContainer {
+    margin-bottom: 40px;
+    @media (min-width: 1200px) {
+        margin-bottom: 37px;
+    }
+}
+
+.question2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 16px;
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 37px;
+    }
+}
+
+.sliderContainer {
+    max-width: 311px;
+    @media (min-width: 1200px) {
+        max-width: 309px;
+    }
+}

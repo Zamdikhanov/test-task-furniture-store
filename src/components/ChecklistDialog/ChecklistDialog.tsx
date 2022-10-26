@@ -4,6 +4,10 @@ import { ReactComponent as CloseSVG } from "../../assets/icons/close.svg";
 import Button from "../Button/Button";
 import css from "./ChecklistDialog.module.scss";
 import Step1 from "./Step1/Step1";
+import Step2 from "./Step2/Step2";
+import Step3 from "./Step3/Step3";
+import Step4 from "./Step4/Step4";
+import Step5 from "./Step5/Step5";
 
 const root = document.querySelector("#root");
 
@@ -13,6 +17,10 @@ function ChecklistDialog({ isOpen = false, onClose = () => {} }) {
   const [modalIsOpen, setIsOpen] = useState(isOpen);
   const [progress, setProgress] = useState("11.6%");
   const [step, setStep] = useState(1);
+  const [isDisabledNextButton, setIsDisabledNextButton] = useState(true);
+  const stepReady = (bool: boolean) => {
+    bool ? setIsDisabledNextButton(false) : setIsDisabledNextButton(true);
+  };
 
   useEffect(() => {
     setIsOpen((prev) => isOpen);
@@ -49,6 +57,7 @@ function ChecklistDialog({ isOpen = false, onClose = () => {} }) {
         setProgress("100%");
     }
     setStep((prev) => prev + 1);
+    setIsDisabledNextButton(true);
   };
 
   return (
@@ -64,19 +73,35 @@ function ChecklistDialog({ isOpen = false, onClose = () => {} }) {
         <button className={css.modal__closeButton} onClick={closeModal}>
           <CloseSVG className={css.modal__closeButtonSvg} />
         </button>
-        <div className={css.modal__progressContainer}>
-          <div
-            className={css.modal__progress}
-            style={{ width: `${progress}` }}
-          ></div>
-        </div>
-        <div className={css.modal__step}>Шаг {step} из 4</div>
+        {step !== 5 && (
+          <>
+            <div className={css.modal__progressContainer}>
+              <div
+                className={css.modal__progress}
+                style={{ width: `${progress}` }}
+              ></div>
+            </div>
+            <div className={css.modal__step}>Шаг {step} из 4</div>
+          </>
+        )}
       </div>
-      <div className={css.modal__content}>{step === 1 && <Step1 />}</div>
+      <div className={css.modal__content}>
+        {step === 1 && <Step1 setIsReady={stepReady} />}
+        {step === 2 && <Step2 setIsReady={stepReady} />}
+        {step === 3 && <Step3 setIsReady={stepReady} />}
+        {step === 4 && <Step4 setIsReady={stepReady} />}
+        {step === 5 && <Step5 />}
+      </div>
       <div className={css.modal__buttonContainer}>
-        <Button buttonType="button" disabled={false} onClick={nextClick}>
-          Далее
-        </Button>
+        {step !== 5 && (
+          <Button
+            buttonType="button"
+            disabled={isDisabledNextButton}
+            onClick={nextClick}
+          >
+            Далее
+          </Button>
+        )}
       </div>
     </Modal>
   );

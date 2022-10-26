@@ -1,10 +1,9 @@
-import css from "./Checkbox.module.scss";
+import css from "./Toggle.module.scss";
 
-function Checkbox({
+function Toggle({
   label = "",
   checked = false,
   disabled = false,
-  type = "default",
   onChange = () => {},
 }) {
   return (
@@ -19,13 +18,9 @@ function Checkbox({
           onChange();
         }}
       />
-      <div
-        className={`${css.checkbox__label} ${type === "checkMark" && css.test}`}
-      >
-        {label}
-      </div>
+      <div className={css.checkbox__label}>{label}</div>
     </label>
   );
 }
 
-export default Checkbox;
+export default Toggle;

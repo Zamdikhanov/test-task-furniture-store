@@ -32,6 +32,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    @media (min-width: 768px) {
+        min-height: 700px;
+    }
     @media (min-width: 1200px) {
         min-height: 588px;
         padding: 24px;
