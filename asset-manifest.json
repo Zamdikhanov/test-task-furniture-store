@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/test-task-furniture-store/static/css/main.88d85209.css",
-    "main.js": "/test-task-furniture-store/static/js/main.743b170c.js",
+    "main.css": "/test-task-furniture-store/static/css/main.3d1b02f8.css",
+    "main.js": "/test-task-furniture-store/static/js/main.405304c6.js",
     "static/media/Montserrat-VariableFont_wght.ttf": "/test-task-furniture-store/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
     "static/media/sofa-03.png": "/test-task-furniture-store/static/media/sofa-03.ab0815fa9b634b654473.png",
     "static/media/sofa-04.png": "/test-task-furniture-store/static/media/sofa-04.48017a1bae7430be35d8.png",
     "static/media/sofa-02.png": "/test-task-furniture-store/static/media/sofa-02.fbf39990ef649882f3ee.png",
     "static/media/sofa-01.png": "/test-task-furniture-store/static/media/sofa-01.d9692fd45cf8b5f5eb2f.png",
     "static/media/bed-01-small.jpg": "/test-task-furniture-store/static/media/bed-01-small.0f7b94e2e5b21f20dd7f.jpg",
-    "static/media/logo.svg": "/test-task-furniture-store/static/media/logo.949bbf027d6ef1385174dab6f71a826d.svg",
+    "static/media/logo.svg": "/test-task-furniture-store/static/media/logo.ec9c2305275674930c68434a776516a8.svg",
     "static/media/bed-04-small.jpg": "/test-task-furniture-store/static/media/bed-04-small.174efeb56084a0e193b1.jpg",
     "static/media/bed-02-small.jpg": "/test-task-furniture-store/static/media/bed-02-small.a553d6941bb6a9a0fd62.jpg",
     "static/media/bed.jpg": "/test-task-furniture-store/static/media/bed.a553d6941bb6a9a0fd62.jpg",
@@ -18,21 +18,21 @@
     "static/media/mattress.jpg": "/test-task-furniture-store/static/media/mattress.1e8871286e65d2ff3ddf.jpg",
     "static/media/dresser.jpg": "/test-task-furniture-store/static/media/dresser.179e865b056910eecbb9.jpg",
     "static/media/closet.jpg": "/test-task-furniture-store/static/media/closet.098d8c749b3ceed4e641.jpg",
-    "static/media/slide-bg.svg": "/test-task-furniture-store/static/media/slide-bg.7083ecef575624246951.svg",
-    "static/media/machine-learning-model-icon.svg": "/test-task-furniture-store/static/media/machine-learning-model-icon.206ff3d28c21cddb4e17f8f354a8f161.svg",
-    "static/media/fluent-design-icon.svg": "/test-task-furniture-store/static/media/fluent-design-icon.30d1abd57e902c1c8f731a5745b566fa.svg",
-    "static/media/delivery-icon.svg": "/test-task-furniture-store/static/media/delivery-icon.a09b657d3d5d72f46a105d34ffe9c245.svg",
-    "static/media/location-icon.svg": "/test-task-furniture-store/static/media/location-icon.6745baba969402e5781e67f2bcd7b763.svg",
+    "static/media/slide-bg.svg": "/test-task-furniture-store/static/media/slide-bg.bb4de79df8bf98e05b79.svg",
+    "static/media/machine-learning-model-icon.svg": "/test-task-furniture-store/static/media/machine-learning-model-icon.f6f83dcbd5b0e27f5ab6a4c1aa919e0d.svg",
+    "static/media/fluent-design-icon.svg": "/test-task-furniture-store/static/media/fluent-design-icon.10a2bc5bc04f0f596c3e50c942276c66.svg",
+    "static/media/delivery-icon.svg": "/test-task-furniture-store/static/media/delivery-icon.7baf7c8334ad6a1951eb7b2f2988cc81.svg",
+    "static/media/location-icon.svg": "/test-task-furniture-store/static/media/location-icon.09850411497743c8f5299978d2861309.svg",
     "index.html": "/test-task-furniture-store/index.html",
-    "static/media/protect-icon.svg": "/test-task-furniture-store/static/media/protect-icon.cefd771e87ecf754e2634cc2c752ab3f.svg",
-    "static/media/ok.svg": "/test-task-furniture-store/static/media/ok.7f94a243b76f8cd41c0f255d3fb82cd5.svg",
-    "static/media/checkbox-ok.svg": "/test-task-furniture-store/static/media/checkbox-ok.104b32656e1b6bd6a5ee.svg",
-    "static/media/close.svg": "/test-task-furniture-store/static/media/close.88c7c9a33f69e90fdbf517169e34ab1b.svg",
-    "main.88d85209.css.map": "/test-task-furniture-store/static/css/main.88d85209.css.map",
-    "main.743b170c.js.map": "/test-task-furniture-store/static/js/main.743b170c.js.map"
+    "static/media/protect-icon.svg": "/test-task-furniture-store/static/media/protect-icon.64f3fd2b1be1483b888756d85357c0f9.svg",
+    "static/media/ok.svg": "/test-task-furniture-store/static/media/ok.88973e0eca75274195ebab7ce366472d.svg",
+    "static/media/checkbox-ok.svg": "/test-task-furniture-store/static/media/checkbox-ok.82910910b880479f6674.svg",
+    "static/media/close.svg": "/test-task-furniture-store/static/media/close.3723e1b4904802211b9997b6cda7588b.svg",
+    "main.3d1b02f8.css.map": "/test-task-furniture-store/static/css/main.3d1b02f8.css.map",
+    "main.405304c6.js.map": "/test-task-furniture-store/static/js/main.405304c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.88d85209.css",
-    "static/js/main.743b170c.js"
+    "static/css/main.3d1b02f8.css",
+    "static/js/main.405304c6.js"
   ]
 }
