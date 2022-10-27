@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-task-furniture-store/static/css/main.e5955ef4.css",
-    "main.js": "/test-task-furniture-store/static/js/main.0a221df3.js",
+    "main.css": "/test-task-furniture-store/static/css/main.88d85209.css",
+    "main.js": "/test-task-furniture-store/static/js/main.743b170c.js",
     "static/media/Montserrat-VariableFont_wght.ttf": "/test-task-furniture-store/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
     "static/media/sofa-03.png": "/test-task-furniture-store/static/media/sofa-03.ab0815fa9b634b654473.png",
     "static/media/sofa-04.png": "/test-task-furniture-store/static/media/sofa-04.48017a1bae7430be35d8.png",
@@ -28,11 +28,11 @@
     "static/media/ok.svg": "/test-task-furniture-store/static/media/ok.7f94a243b76f8cd41c0f255d3fb82cd5.svg",
     "static/media/checkbox-ok.svg": "/test-task-furniture-store/static/media/checkbox-ok.104b32656e1b6bd6a5ee.svg",
     "static/media/close.svg": "/test-task-furniture-store/static/media/close.88c7c9a33f69e90fdbf517169e34ab1b.svg",
-    "main.e5955ef4.css.map": "/test-task-furniture-store/static/css/main.e5955ef4.css.map",
-    "main.0a221df3.js.map": "/test-task-furniture-store/static/js/main.0a221df3.js.map"
+    "main.88d85209.css.map": "/test-task-furniture-store/static/css/main.88d85209.css.map",
+    "main.743b170c.js.map": "/test-task-furniture-store/static/js/main.743b170c.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5955ef4.css",
-    "static/js/main.0a221df3.js"
+    "static/css/main.88d85209.css",
+    "static/js/main.743b170c.js"
   ]
 }
