@@ -1,4 +1,14 @@
+import React from "react";
 import css from "./Checkbox.module.scss";
+
+interface ICheckboxProps {
+  label?: string;
+  checked?: boolean;
+  disabled?: boolean;
+  type?: "default" | "checkMark";
+  onChange?: () => void;
+  children?: React.ReactNode;
+}
 
 function Checkbox({
   label = "",
@@ -6,7 +16,8 @@ function Checkbox({
   disabled = false,
   type = "default",
   onChange = () => {},
-}) {
+  children = null,
+}: ICheckboxProps) {
   return (
     <label className={css.checkbox}>
       <input
@@ -23,6 +34,7 @@ function Checkbox({
         className={`${css.checkbox__label} ${type === "checkMark" && css.test}`}
       >
         {label}
+        {children}
       </div>
     </label>
   );

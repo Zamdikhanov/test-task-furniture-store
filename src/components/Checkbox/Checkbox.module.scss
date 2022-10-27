@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 .checkbox {
-    display: flex;
+    display: inline-flex;
     border: none;
     &:last-child {
         margin-bottom: 0px;
@@ -34,7 +34,7 @@
             bottom: 4px;
             background-color: $color_bg_accent;
             @media (min-width: 1200px) {
-                bottom: 5px;
+                bottom: 5.5px;
             }
         }
         &:checked+.test::after {

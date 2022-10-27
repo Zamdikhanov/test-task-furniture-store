@@ -11,12 +11,12 @@ function ProductSlide({ imgUrl = "", callback = () => {} }) {
         <h2 className={css.productSlide__title}>
           Интернет магазин мебельной компании
         </h2>
-        <div className={css.productSlide__subtitle}>Вот так</div>
+        <div className={css.productSlide__subtitle}>SWEETHOME</div>
         <div className={css.productSlide__text}>
-          Очередное тестовое задание в процессе разработки. Должно стать
-          последним. Очередное тестовое задание в процессе разработки. Должно
-          стать последним.Очередное тестовое задание в процессе разработки.
-          Должно стать последним.
+          Добро пожаловать на официальный сайт «SWEETHOME»! В каталоге компании
+          представлен широкий выбор корпусной мебели от производителя — спальни,
+          гостиные, прихожие, мебель для ванных комнат, кухонь, а также мягкая
+          мебель и матрасы.
         </div>
         <div className={css.productSlide__imageBlock}>
           <img src={imgUrl} alt="sofa" />

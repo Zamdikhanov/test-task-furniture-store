@@ -6,6 +6,7 @@ import Slider from "rc-slider";
 
 const Step2 = ({ setIsReady = (a: boolean) => {} }) => {
   const [isOn, setIsOn] = useState(false);
+  const [value, setValue] = useState([2000, 25000]);
   useEffect(() => {
     if (isOn) {
       setIsReady(true);
@@ -23,11 +24,20 @@ const Step2 = ({ setIsReady = (a: boolean) => {} }) => {
         <>
           <div className={css.question2}>Укажите диапазон Вашего бюджета:</div>
           <div className={css.sliderContainer}>
+            <div className={css.sliderContainer__valueContainer}>
+              <div className={css.sliderContainer__value}>{value[0]} руб</div>
+              <div className={css.sliderContainer__value}>{value[1]} руб</div>
+            </div>
             <Slider
               range
               allowCross={false}
-              defaultValue={[2000, 50000]}
-              onChange={() => {}}
+              min={0}
+              max={50000}
+              step={1000}
+              value={value}
+              onChange={(e) => {
+                Array.isArray(e) && setValue(e);
+              }}
               trackStyle={[{ backgroundColor: "#f2b030", height: "2px" }]}
               handleStyle={[
                 {
@@ -47,6 +57,10 @@ const Step2 = ({ setIsReady = (a: boolean) => {} }) => {
               ]}
               railStyle={{ backgroundColor: "#ECF1F2", height: "2px" }}
             />
+            <div className={css.sliderContainer__Containertip}>
+              <div className={css.sliderContainer__tip}>{value[0]} руб</div>
+              <div className={css.sliderContainer__tip}>{value[1]} руб</div>
+            </div>
           </div>
         </>
       )}

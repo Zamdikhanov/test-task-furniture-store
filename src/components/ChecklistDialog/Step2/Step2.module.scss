@@ -38,3 +38,39 @@
         max-width: 309px;
     }
 }
+
+.sliderContainer__valueContainer {
+    max-width: 311px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border: 1px solid #ecf1f2;
+    border-radius: 2px;
+    .sliderContainer__value {
+        width: 50%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+}
+
+.sliderContainer__Containertip {
+    max-width: 311px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    .sliderContainer__tip {
+        width: 50%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0;
+        color: rgba(20, 20, 20, 0.5);
+    }
+}
